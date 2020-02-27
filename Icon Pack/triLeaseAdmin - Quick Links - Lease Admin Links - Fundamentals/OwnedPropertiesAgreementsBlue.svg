@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="-4 0 32 32" width="45px" height="32px" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    
+    <path
+    transform="translate(-2.5)"     
+     d="M 26,2 H 8 A 2,2 0 0 0 6,4 V 8 H 4 v 2 h 2 v 5 H 4 v 2 h 2 v 5 H 4 v 2 h 2 v 4 a 2,2 0 0 0 2,2 h 18 a 2,2 0 0 0 2,-2 V 4 A 2,2 0 0 0 26,2 Z m 0,26 H 8 v -4 h 2 V 22 H 8 v -5 h 2 V 15 H 8 v -5 h 2 V 8 H 8 V 4 H 26 Z M 14,8 h 8 v 2 h -8 z m 0,7 h 8 v 2 h -8 z m 0,7 h 8 v 2 h -8 z" fill="#0062ff"/>
+
+</svg>

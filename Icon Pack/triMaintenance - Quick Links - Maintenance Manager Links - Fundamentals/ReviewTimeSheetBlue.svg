@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="-4 0 32 32" width="45px" height="32px" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+<path d="M 15.09,21 11.5,17.41 V 11 h 2 v 5.58 l 3,3.01 z" fill="#0062ff"></path>
+
+<path d="M 24.5,9 23.08,7.59 20.83,9.84 a 10.94,10.94 0 1 0 1.18,1.65 z m -12,17 a 9,9 0 1 1 9,-9 9,9 0 0 1 -9,9 z" fill="#0062ff"></path>
+
+<path d="m 9.5,2 h 6 v 2 h -6 z" fill="#0062ff"></path>
+
+</svg>

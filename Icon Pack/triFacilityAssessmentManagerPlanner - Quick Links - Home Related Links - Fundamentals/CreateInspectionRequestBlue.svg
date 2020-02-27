@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="-4 0 32 32" width="45px" height="32px" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    
+<path d="m 23.5,1 h -2 v 4 h -4 v 2 h 4 v 4 h 2 V 7 h 4 V 5 h -4 z"  fill="#0062ff"/>
+    
+    <path xmlns="http://www.w3.org/2000/svg" d="m 5.5,9 h 2 v 2 h -2 z m 4,0 h 7 v 2 h -7 z m -4,6 h 2 v 2 h -2 z m 4,0 h 7 v 2 h -7 z m -4,6 h 2 v 2 h -2 z m 4,0 h 7 v 2 h -7 z" id="path4" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" inkscape:connector-curvature="0" style="fill:#0062ff"/>
+
+
+<path xmlns="http://www.w3.org/2000/svg" id="rect14" style="" d="m 13.5,2 h 2 v 2 h -2 z m 6,12 h 2 v 8 h -2 z m 0,8 v 6 H 3.5 V 4 h 10 V 2 h -10 a 2,2 0 0 0 -2,2 v 24 a 2,2 0 0 0 2,2 h 16 a 2,2 0 0 0 2,-2 v -6 z" fill="#0062ff"/>
+    
+</svg>

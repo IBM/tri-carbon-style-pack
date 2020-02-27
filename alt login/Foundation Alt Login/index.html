@@ -1,0 +1,288 @@
+<!--
+ /*
+ *
+ * IBM Confidential
+ *
+ * OCO Source Materials
+ *
+ * (C) COPYRIGHT IBM CORP. 2011-2016
+ *
+ * The source code for this program is not published or otherwise
+ * divested of its trade secrets, irrespective of what has been
+ * deposited with the U.S. Copyright Office.
+ *
+ */
+ -->
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="SHORTCUT ICON" href="html/en/default/login/loginResource.jsp?fileLoc=/images/icons/favicon.ico">
+		<link rel='stylesheet' type="text/css" href="html/en/default/login/login.css">
+		<!--<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans">-->
+		<!-- <link rel='stylesheet' type="text/css" href="./alt.css"> -->
+		<script type="text/javascript" >
+			/**
+			 * Append all the input parameters sent from extRedirect.jsp or other locations and send them to the login_fms.jsp
+			 */
+			function getUrl(){
+			    var loginUrl = 'html/en/default/login/loginMain.jsp';
+			    var query = window.location.search.substring(1);
+			    var parms = query.split('&');
+			    for (var i=0; i<parms.length; i++) {
+			        var pos = parms[i].indexOf('=');
+			        if (pos > 0) {
+			            var key = parms[i].substring(0,pos);
+			            var val = parms[i].substring(pos+1);
+			            if (i == 0){
+			            	loginUrl += '?';
+			            }else{
+			            	loginUrl += '&';
+			            }
+			            loginUrl += escapeHtml(escapeUrl(key)) + '=' + escapeHtml(escapeUrl(val));
+			        }
+			    }
+			    return loginUrl;
+			}
+
+			var pageTitle = "Log in to IBM TRIRIGA";
+
+
+			function setTitles(){
+				parent.document.title = pageTitle;
+				document.getElementById("loginTitle").innerHTML = pageTitle;
+			}
+
+		</script>
+
+		<style>
+
+		@font-face {
+		  font-family: ibmPlexSans;
+		  src: url(https://fonts.gstatic.com/s/ibmplexsans/v7/zYXgKVElMYYaJe8bpLHnCwDKhdHeFaxOedc.woff2);
+		}
+			.page-title{
+				width: 100%;
+				height: 42px;
+				line-height: 42px;
+				background-color: #171717;
+				position: absolute;
+				left: 0px;
+				top: 0px;
+				color: whitesmoke;
+				font-family: ibmPlexSans;
+				font-weight: bold;
+				font-size: 16px;
+				padding: 0px 0px 0px 8px;
+
+			}
+
+		    #main {
+			    background-color: transparent !important;
+		    }
+
+
+            .bg-picture {
+                position: fixed;
+                min-height: 100%;
+                left: 0;
+                right: 0;
+                z-index: -1;
+                background-color: #1A2446;
+                background-image: url('html/en/default/login/loginResource.jsp?fileLoc=/images/BuildingsLowResBlur.svg');
+                background-size: cover;
+            }
+
+            .bg-picture:after {
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                content: "";
+                display: block;
+                background-size: cover;
+                background-image: url('html/en/default/login/loginResource.jsp?fileLoc=/images/Buildings.jpg');
+                transition-property: opacity;
+                transition-duration: 2s;
+                transition-timing-function: ease;
+                opacity: 0;
+            }
+
+			.bg-picture[enhanced]:after {
+				opacity: 1;
+			}
+
+            .loginContent {
+                background-color: #ffffff;
+                padding: 48px;
+                height: 228px;
+                width: 350px;
+                visibility: hidden;
+                margin: auto;
+            }
+
+            #loginWrapper {
+								height: 80%;
+            }
+
+            #loginTitle {
+                font-size: 20px;
+                margin-top: 0px;
+								font-family: ibmPlexSans;
+            }
+
+            input {
+                width: 60%;
+            }
+
+
+            #footer{
+                opacity: .9;
+                background-color: #171717;
+								padding-top:16px;
+            }
+
+            #tririgaLegal {
+                width: 80%;
+                max-width: 742px;
+                min-width: 504px;
+								font-family: ibmPlexSans;
+            }
+
+            #csiLegal{
+                width: calc(100% - 52px);
+            }
+
+						#header{
+							height: 30px;
+						}
+
+        </style>
+
+	</head>
+	<body onload="setTitles()">
+
+        <div id="main">
+        <div  class="bg-picture"></div>
+
+        <div id=pageTitle class="page-title">IBM TRIRIGA</div>
+        <div id="loginWrapper" >
+
+            <div id="header">
+                <!-- <div id="loginLogo" style="background-image: url('html/en/default/login/loginResource.jsp?fileLoc=/images/login_logo.png')"></div> -->
+                <div class='clear'  ></div>
+                <!-- <div id="loginTitle" style = "color:#ffffff"></div> -->
+            </div><!--header-->
+                <div id= "loginContent" class="loginContent"  >
+                    <p style = 'color : #dddddd; font-size:90%; margin:4px; margin-bottom:200px; margin-top:295px; position: absolute; font: ibmPlexSans;'>
+
+                    <div id ="messageOverlay" > <!-- used to display any dynamic messages that come back from the server -->
+
+                        <div id="messageWrapper">
+
+                            <div id="dialogMessageHeader"></div>
+
+                            <div id='dialogBody'> </div>
+
+                            <div id='dialogButtonWrapper'>
+                                <button id="msgButtonAffirm" ></button>
+                                <button id="msgButtonCancel" onclick='dialogCancel()'>Cancel</button>
+                            </div>
+                            <div class='clear'></div>
+
+                        </div><!-- messageOverlay -->
+
+                    </div>
+
+                    <div class="iframeDiv" > <!-- This contains the iframe with the username field, password field, and the logic that authenticates with the server. -->
+                        <div id="loginTitle" style = "color:#ffffff"></div>
+                        <script language="JavaScript">
+                            document.write("<iframe id='loginMain' role='presentation' src='" + getUrl() + "' frameborder='0' hspace='0' marginheight='0' marginwidth='0' scrolling='no' vspace='0' style='width: 100%; height:100%;' title='Login Form' allowTransparency='true'></iframe>");
+                        </script>
+                    </div>
+
+                </div> <!-- loginContent -->
+
+                <div class='clear'></div>
+
+			</div> <!-- loginWrapper -->
+
+            <div class='clear'></div>
+
+			<div id="footerWrapper">
+				<div id='footer' style="position: relative; z-index:1;">
+					<div id='tririgaLegal'>
+						<div>
+
+							<p style='margin:0px;margin-top:0px;'>
+							Licensed Materials - Property of IBM (c) Copyright IBM Corp. 1997, 2016  All Rights Reserved. IBM, the IBM logo, ibm.com and TRIRIGA are trademarks or registered trademarks of International Business Machines Corp., registered in many jurisdictions worldwide. Other product and service names might be trademarks of IBM or other companies. A current list of IBM trademarks is available on the Web at <a href="http://www.ibm.com/legal/copytrade.shtml">Copyright and trademark information</a>.
+							</p>
+						</div>
+						<div id='csiImage'>
+							<img src='html/en/default/login/loginResource.jsp?fileLoc=/images/csi_logo.png'/>
+						</div>
+						<div id="csiLegal">
+							<p style='margin:0px;margin-top:0px;'>
+							<i>MasterFormat</i><sup>&reg;</sup> is produced jointly by CSI and Construction Specifications Canada (CSC). U.S. copyright is held by CSI and Canadian copyright by CSC. All Rights Reserved. For license information, contact CSI at csi@csinet.org. For more information on MasterFormat visit <a href="http://www.MasterFormat.com">www.MasterFormat.com</a>.
+							</p>
+						</div>
+						<div class='clear'></div>
+						<div>
+							<p style='margin-top:0px;margin-top:0px;'>Portions copyright (C) Free Software Foundation, Inc 1991, 1999.</p>
+						</div>
+					</div> <!-- tririgaLegal -->
+				</div> <!-- footer -->
+			</div><!-- footerWrapper  -->
+		</div><!-- main  -->
+
+        <script>
+
+            window.onload = function handleLoad() {
+
+                var win, doc, img, header;
+
+                win = window;
+		        		doc = win.document;
+                img = new Image();
+                header = doc.querySelector('.bg-picture');
+
+                img.onload = function(){
+                    setTimeout(function(){ header.setAttribute("enhanced","enhanced"); }, 1000)
+                };
+
+                img.src = "html/en/default/login/loginResource.jsp?fileLoc=/images/Buildings.jpg";
+
+                // this code is needed to style the content of the login iFrame since the default styling of the iFrame is not accissible through CSS
+
+                if (navigator.appName == 'Microsoft Internet Explorer' ||  !!(navigator.userAgent.match(/Trident/) || navigator.userAgent.match(/rv:11/)))
+                {
+                    document.frames['loginMain'].document.querySelector(".loginButton").setAttribute("style", "background-color: #0062ff; text-align: left; font-family: ibmPlexSans");
+										document.frames['loginMain'].document.querySelector("#loginError").setAttribute("style", "width: 250px; font-family: ibmPlexSans; margin-top: 60px; color: #da1e28; font-weight: normal");
+                    document.frames['loginMain'].document.querySelector("#loginForm").setAttribute("style", "margin-top: 32px");
+                    document.frames['loginMain'].document.getElementById("USERNAME").setAttribute("style", "border-top-width: 0px; border-left-width: 0px; border-right-width: 0px; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #606060; background-color: #f3f3f3 !important; width: 90%");
+                    document.frames['loginMain'].document.getElementById("PASSWORD").setAttribute("style", "border-top-width: 0px; border-left-width: 0px; border-right-width: 0px; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #606060; background-color: #f3f3f3 !important; width: 90%");
+                    document.getElementById("loginTitle").setAttribute("style", "color: #171717; padding-left: 3px;");
+                    document.getElementById("loginTitle").innerHTML = "Log in to IBM TRIRIGA";
+                    loginContent.setAttribute("style", "visibility: visible");
+
+                }else{
+
+                    loginMain.contentWindow.document.querySelector(".loginButton").setAttribute("style", "background-color: #0062ff; text-align: left; font-family: ibmPlexSans");
+										loginMain.contentWindow.document.querySelector("#loginError").setAttribute("style", "width: 250px; font-family: ibmPlexSans; margin-top: 60px; color: #da1e28; font-weight: normal");
+										loginMain.contentWindow.document.querySelector("#loginForm").setAttribute("style", "margin-top: 32px");
+                    loginMain.contentWindow.document.getElementById("USERNAME").setAttribute("style", "border-top-width: 0px; border-left-width: 0px; border-right-width: 0px; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #606060; background-color: #f3f3f3 !important; width: 90%");
+                    loginMain.contentWindow.document.getElementById("PASSWORD").setAttribute("style", "border-top-width: 0px; border-left-width: 0px; border-right-width: 0px; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: #606060; background-color: #f3f3f3 !important; width: 90%");
+                    document.getElementById("loginTitle").setAttribute("style", "color: #171717; padding-left: 3px;");
+                    document.getElementById("loginTitle").innerHTML = "Log in to IBM TRIRIGA";
+                    loginContent.setAttribute("style", "visibility: visible");
+                }
+
+
+            };
+
+						function dialogCancel(){
+								messageOverlay.setAttribute("style", "visibility: hidden");
+						}
+        </script>
+	</body>
+</html>

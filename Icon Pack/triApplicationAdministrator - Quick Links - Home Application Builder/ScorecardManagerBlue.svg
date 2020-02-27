@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="-4 0 32 32" width="45px" height="32px" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+<circle cx="6.5" cy="9" r="3" fill="#0062ff"></circle>
+
+<path d="m 15.5,8 h 14 v 2 h -14 z m 0,14 h 14 v 2 h -14 z M 5.5,24.59 2.91,22 1.5,23.41 l 4,4 8,-8 L 12.09,18 Z" fill="#0062ff"></path>
+
+</svg>

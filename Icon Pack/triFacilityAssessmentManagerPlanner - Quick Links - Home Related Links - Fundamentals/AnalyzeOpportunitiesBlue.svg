@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="-4 0 32 32" width="45px" height="32px" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    
+    <path d="m 9.5,16 a 2,2 0 1 1 -2,2 2,2 0 0 1 2,-2 m 0,-2 a 4,4 0 1 0 4,4 4,4 0 0 0 -4,-4 z m 11,-8 a 4,4 0 1 1 -4,4 4,4 0 0 1 4,-4 m 0,-2 a 6,6 0 1 0 6,6 6,6 0 0 0 -6,-6 z M 24,21 A 1.5,1.5 0 1 1 22.5,22.5 1.5,1.5 0 0 1 24,21 m 0,-2 A 3.5,3.5 0 1 0 27.5,22.5 3.5,3.5 0 0 0 24,19 Z m 5.5,11 h -26 a 2,2 0 0 1 -2,-2 V 2 h 2 v 26 h 26 z" fill="#0062ff"></path>
+    
+</svg>

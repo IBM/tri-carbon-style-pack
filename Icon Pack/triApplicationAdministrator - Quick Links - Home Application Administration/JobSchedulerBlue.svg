@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="-4 0 32 32" width="45px" height="32px" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+    <path d="m 21.5,30 a 8,8 0 1 1 8,-8 8,8 0 0 1 -8,8 z m 0,-14 a 6,6 0 1 0 6,6 6,6 0 0 0 -6,-6 z" fill="#0062ff"></path>
+    
+    <path d="M22.59 25L20 22.41V18h2v3.59l2 2L22.59 25z" fill="#0062ff"></path>
+    
+    <path d="m 7.5,6 h 18 v 2 h -18 z m 0,6 h 6 v 2 h -6 z m -6,2 7,5 -7,5 z" fill="#0062ff"></path>
+    
+
+</svg>

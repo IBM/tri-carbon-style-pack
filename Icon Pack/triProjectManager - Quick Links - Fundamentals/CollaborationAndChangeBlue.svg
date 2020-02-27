@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="-4 0 32 32" width="45px" height="32px" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    
+    <defs>
+        <linearGradient id="alphaGradV" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0" stop-color="white"/>
+            <stop offset="1" stop-color="black"/>
+        </linearGradient>
+        <linearGradient id="alphaGradV2" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0" stop-color="black"/>
+            <stop offset="1" stop-color="white"/>
+        </linearGradient>        
+        
+        <mask id="alphaMask" x="0" y="0" width="100%" height="100%">
+            <rect x="0" y="0" width="100%" height="100%" fill="white"/>
+            <rect x="12" y="24" height="8" width="24" fill="url(#alphaGradV)"/>
+            <rect x="0" y="0" height="12" width="100%" fill="url(#alphaGradV2)"/>
+        </mask>
+        <linearGradient id="linear" x1="50%" y1="0%" x2="0%" y2="50%">
+            <stop offset="0%" stop-color="#1367fb"/>
+            <stop offset="100%" stop-color="#a342f7"/>
+        </linearGradient>
+    </defs>
+    <g transform="translate(-0.5)">
+    <path d="M 11,11 H 5 c -1.6568542,0 -3,1.343146 -3,3 v 2 h 2 v -2 c 0,-0.552285 0.4477153,-1 1,-1 h 6 c 0.552285,0 1,0.447715 1,1 v 2 h 2 v -2 c 0,-1.656854 -1.343146,-3 -3,-3 z M 8,10 C 11.563867,10 13.348013,5.6914458 10.828283,3.1717166 8.3085542,0.65198733 4,2.4361328 4,6 4,8.209139 5.790861,10 8,10 Z M 8,4 C 9.7819336,4 10.674006,6.1542771 9.4141417,7.4141417 8.1542771,8.6740063 6,7.7819336 6,6 6,4.8954305 6.8954305,4 8,4 Z m 19,21 h -6 c -1.656854,0 -3,1.343146 -3,3 v 2 h 2 v -2 c 0,-0.552285 0.447715,-1 1,-1 h 6 c 0.552285,0 1,0.447715 1,1 v 2 h 2 v -2 c 0,-1.656854 -1.343146,-3 -3,-3 z m -7,-5 c 0,3.563867 4.308554,5.348013 6.828283,2.828283 C 29.348013,20.308554 27.563867,16 24,16 c -2.209139,0 -4,1.790861 -4,4 z m 6,0 c 0,1.781934 -2.154277,2.674006 -3.414142,1.414142 C 21.325994,20.154277 22.218066,18 24,18 c 1.104569,0 2,0.895431 2,2 z" fill="#0062ff"></path>
+    
+    <path d="M 6,21 V 20 H 4 v 1 c 0,3.865993 3.1340068,7 7,7 h 3 V 26 H 11 C 8.2385763,26 6,23.761424 6,21 Z M 24,11 v 1 h 2 V 11 C 26,7.1340068 22.865993,4 19,4 h -3 v 2 h 3 c 2.761424,0 5,2.2385763 5,5 z" fill="#0062ff"></path>
+    </g>
+</svg>

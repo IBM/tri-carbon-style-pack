@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="-4 0 32 32" width="45px" height="32px" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    
+    <defs>
+        <linearGradient id="alphaGradV" x1="0%" y1="100%" x2="0%" y2="0%">
+            <stop offset="0" stop-color="white"/>
+            <stop offset="1" stop-color="black"/>
+        </linearGradient>
+        <linearGradient id="alphaGradH" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0" stop-color="white"/>
+            <stop offset="1" stop-color="black"/>
+        </linearGradient>        
+        
+        <mask id="alphaMask" x="0" y="0" width="100%" height="100%">
+            <rect x="0" y="0" width="100%" height="100%" fill="white"/>
+            <rect x="25%" y="0%" height="35%" width="25%" fill="url(#alphaGradV)" transform="rotate(45)"/>
+            </mask>
+        <linearGradient id="linear" x1="50%" y1="0%" x2="0%" y2="50%">
+            <stop offset="0%" stop-color="#1367fb"/>
+            <stop offset="100%" stop-color="#a342f7"/>
+        </linearGradient>
+    </defs>
+    
+    <path d="m 13.516568,21.266696 -4.9999993,-4.96 1.5899993,-1.57 3.41,3.38 7.41,-7.35 1.59,1.58 z"
+    fill="#0062ff"></path>
+    
+    <path d="M 16,2 A 14,14 0 1 0 30,16 14,14 0 0 0 16,2 Z m 0,26 A 12,12 0 1 1 28,16 12,12 0 0 1 16,28 Z" fill="#0062ff" transform="translate(-0.48343128,-0.23330431)"></path>
+
+</svg>
