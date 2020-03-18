@@ -1,4 +1,6 @@
 # tri-carbon-style-pack
- TRIRIGA Carbon Style Pack 
+ TRIRIGA Carbon Style Pack
 
-Check "How to apply TRIRIGA Carbon style pack.docx" file for instructions on how to apply the new skin
+Download the zip file containing all the files from this repository and unzip it
+
+Check "How to apply TRIRIGA Carbon style pack.pdf" file for instructions on how to apply the new skin
