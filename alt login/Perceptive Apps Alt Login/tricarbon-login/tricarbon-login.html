@@ -1,0 +1,83 @@
+<!--
+@license
+IBM Confidential - OCO Source Materials - (C) COPYRIGHT IBM CORP. 2015-2016 - The source code for this program is not published or otherwise divested of its trade secrets, irrespective of what has been deposited with the U.S. Copyright Office.
+-->
+<link rel="import" href="tricarbon-login-ui.html"> 
+
+<link rel="import" href="../triplat-login/triplat-login.html">
+<!-- <link rel="import" href="../paper-material/paper-material.html"> -->
+<!-- 
+
+The beta-log.html and beta-log-ui.html are provided as a template to help the developer to define an alternate login page for UX applications.
+
+Design Guidelines:
+1) Use the triplat-login to authenticate the user.
+2) Change the beta-log-ui by your own login ui.
+
+Enabling the Alternate UX Login Feature:
+1) In the Admin Console, go to the System Manager and edit the TRIRIGA Web Property File and define the following:
+	ALTERNATE_UX_LOGIN_VIEW = beta-log
+2) Re-start the application server.
+
+ -->
+
+<dom-module id="tricarbon-login">
+
+<!-- <link rel="import" type="css" href="denim.css"> -->
+<!-- <link rel="import" type="css" href="style.css"> -->
+
+	<template>
+		<style>
+			/* :host {
+				@apply(--layout-fit);
+				background-image: url('images/Buildings.jpg');
+				background-size: cover;
+			} */
+
+		</style>
+		<tricarbon-login-ui id="loginUI" username="{{username}}" password="{{password}}" login-title="IBM TRIRIGA"
+		                       on-login="_handleLogin" on-force-login="_handleForceLogin">	
+		
+
+		<triplat-login 
+						id="loginControl" 
+				       	username="[[username]]"
+				       	password="[[password]]"
+						on-unauthorized="_handleUnauthorized"
+						on-already-logged="_handleAlreadyLogged"
+						on-error="_handleError">
+		</triplat-login >	
+	</tricarbon-login-ui>
+	</template>
+</dom-module>
+<script>
+	Polymer({
+	
+		is: "tricarbon-login",
+
+		attached: function(){
+			//document.querySelector('body').style.backgroundColor = "#3d415a"; 
+			document.querySelector('body').style.backgroundColor = "#373b50";
+		},
+		
+		_handleLogin: function(e) {
+			this.$.loginControl.login();
+		},
+
+		_handleForceLogin: function(){
+			this.$.loginControl.forceLogin();
+		},
+
+		_handleUnauthorized: function(e) {
+			this.$.loginUI.showUnauthorizedMessage();
+		},
+
+		_handleAlreadyLogged: function(e) {
+			this.$.loginUI.showAlreadyLoggedMessage();
+		},
+
+		_handleError: function(e) {
+			this.$.loginUI.showErrorMessage();
+		}
+	});
+</script>
