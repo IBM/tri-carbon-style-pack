@@ -1,7 +1,7 @@
 # Customize the TRIRIGA user experience with Carbon Design Components
 *by Joshua Meurer, Amy Millett, and Leonardo Mellaci de Matos*
 
-In this tutorial you will learn how to customize the skin and user experience in TRIRIGA using resources aligned with Carbon, IBM's open-source design system for products and experiences.   
+In this *tutorial* you will learn how to customize the skin and user experience in TRIRIGA using resources aligned with Carbon, IBM's open-source design system for products and experiences.   
 
 [IBM TRIRIGA](https://www.ibm.com/products/tririga), is an intelligent real estate and facilities management solution. Through the power of IoT and AI, it provides businesses with insight into capabilities such as space, utilization, capital projects and lease administration and accounting. Developers can innovate and extend [IBM TRIRIGA](https://www.ibm.com/products/tririga) by developing [perceptive apps](https://www.ibm.com/developerworks/community/wikis/home?lang=en#!/wiki/IBM%20TRIRIGA1/page/UX%20Perceptive%20Apps) which are dynamic, custom applications built using the [TRIRIGA UX framework](https://www.ibm.com/developerworks/community/wikis/home?lang=en#!/wiki/IBM%20TRIRIGA1/page/UX%20Framework). Developers can also [customize the user experience](https://www.ibm.com/support/knowledgecenter/SSHEB3_3.6.0/com.ibm.tap.doc/uex/c_ctr_config_uex.html) of TRIRIGA with custom styles.  
 
