@@ -432,7 +432,7 @@
 	</row>
 	<row>
 		<OBJECT><![CDATA[PORTAL-SECTION-HEADER-BOTTOM-BORDER-COLOR]]></OBJECT>
-		<VALUE><![CDATA[#0062ff]]></VALUE>
+		<VALUE><![CDATA[#ffffff]]></VALUE>
 		<LABEL><![CDATA[Portal Section Bottom Border Color]]></LABEL>
 	</row>
 	<row>
@@ -1680,7 +1680,7 @@
 	</row>
 	<row>
 		<OBJECT><![CDATA[LISTENDCOLORGRADIENT]]></OBJECT>
-		<VALUE><![CDATA[#8c8c8c]]></VALUE>
+		<VALUE><![CDATA[#f4f4f4]]></VALUE>
 	</row>
 	<row>
 		<OBJECT><![CDATA[DATASTYLECLASS9FONTSIZE]]></OBJECT>
@@ -2196,7 +2196,7 @@
 	</row>
 	<row>
 		<OBJECT><![CDATA[TDDARK]]></OBJECT>
-		<VALUE><![CDATA[#8c8c8c]]></VALUE>
+		<VALUE><![CDATA[#cacaca]]></VALUE>
 	</row>
 	<row>
 		<OBJECT><![CDATA[SEPARATOR]]></OBJECT>
