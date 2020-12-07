@@ -89,9 +89,10 @@ This launches the **Navigation Item Editor** dialog. Navigate to the **Upload Ic
 
 ![](./images/TRIRIGA-Home-With-Changed-Icons.png)  
 
+### 16. Customize and configure the Sign In Page
+
 **Note:** For environments that been upgraded to the 3.7 or later version of the TRIRIGA platform. Customizing the login page is no longer needed. The Carbon Style version of the login is included in the platform upgrade.
 
-### 16. Customize and configure the Sign In Page
 Developers with TRIRIGA administrative privileges can customize the sign in page. The content (ex. instructions) and look and feel of the default and alternate TRIRIGA sign in page can be customized. The only image that can be change in the default sign in page is login_background.png. You can create an alternate sign in page using the index.html page typically found in ```<TRIRIGA home>/userfiles/alt/```.  
 
 To help you create a custom login page in this tutorial, resources have been provided in the accompanying GitHub repository. These resources for the UX alt login are in the Style Pack directory named ```Perceptive Apps Alt Login`` of your cloned GitHub repository. The view resources are in the folder ```tricarbon-login```.   
