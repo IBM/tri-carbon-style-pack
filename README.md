@@ -128,8 +128,6 @@ $ tri-deploy -t <tririga_url> -u <user> -p <password>
 
 *Note:* You should run this command from the directory that contains the alt login resources from the cloned GitHub repository i.e. ```<root>/alt login/Perceptive Apps Alt Login/tricarbon-login```. The parent directory name must match the name of the web view you created in the previous step. If you get an error when running the command related to spaces in the path, copy the resources to a path that does not contain spaces and run the command from this new directory location.
 
-**Note:** For environments that been upgraded to the 3.7 or later version of the TRIRIGA platform. Customizing the login page is no longer needed. The Carbon Style version of the login is included in the platform upgrade.
-
 #### Update the TRIRIGAWEB.properties with the location of your custom login page resources  
 To update the ```TRIRIGAWEB.properties``` file with the location of your custom login page resources, you will need to use the **Administrator Console** ***http://hostname:port/context path/html/en/default/admin***. Navigate to the ***System Info*** tab on the right of the **Administrator Console**. In the **Property Files** pane to the right, click on the ***Edit*** link besides the TRIRIGA Web property file. See these [Knowledge Center ](https://www.ibm.com/support/knowledgecenter/SSHEB3_3.6.1/com.ibm.tap.doc/uex/t_configure_sign_in_page.html) instructions for details.
 
