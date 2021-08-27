@@ -62,7 +62,7 @@
 	</row>
 	<row>
 		<OBJECT><![CDATA[CRUMB-CONTAINER_DIV_TEXT_FONTSIZE]]></OBJECT>
-		<VALUE><![CDATA[0.7em]]></VALUE>
+		<VALUE><![CDATA[1em]]></VALUE>
 		<LABEL><![CDATA[Bread Crumb Title Font]]></LABEL>
 	</row>
 	<row>
@@ -862,7 +862,7 @@
 	</row>
 	<row>
 		<OBJECT><![CDATA[X-TAB-STRIP_TEXT_FONTFAMILY]]></OBJECT>
-		<VALUE><![CDATA[Trebuchet MS, Helvetica, sans-serif]]></VALUE>
+		<VALUE><![CDATA[IBMPlexSans, Trebuchet MS, Helvetica, sans-serif]]></VALUE>
 		<LABEL><![CDATA[x-tab-strip_Text]]></LABEL>
 	</row>
 	<row>
@@ -1572,12 +1572,12 @@
 		<VALUE><![CDATA[#dcdcdc]]></VALUE>
 	</row>
 	<row>
-		<OBJECT><![CDATA[SEPARATOR1]]></OBJECT>
-		<VALUE><![CDATA[#8c8c8c]]></VALUE>
-	</row>
-	<row>
 		<OBJECT><![CDATA[OBJHEAD_TITLE]]></OBJECT>
 		<VALUE><![CDATA[#FFFF99]]></VALUE>
+	</row>
+	<row>
+		<OBJECT><![CDATA[SEPARATOR1]]></OBJECT>
+		<VALUE><![CDATA[#8c8c8c]]></VALUE>
 	</row>
 	<row>
 		<OBJECT><![CDATA[TRIRIGALISTCOLOR2]]></OBJECT>
@@ -2488,12 +2488,12 @@
 		<VALUE><![CDATA[normal]]></VALUE>
 	</row>
 	<row>
-		<OBJECT><![CDATA[SH_TITLE]]></OBJECT>
-		<VALUE><![CDATA[#FFFFFF]]></VALUE>
-	</row>
-	<row>
 		<OBJECT><![CDATA[SECTIONHEADERROW]]></OBJECT>
 		<VALUE><![CDATA[#f3f3f3]]></VALUE>
+	</row>
+	<row>
+		<OBJECT><![CDATA[SH_TITLE]]></OBJECT>
+		<VALUE><![CDATA[#FFFFFF]]></VALUE>
 	</row>
 	<row>
 		<OBJECT><![CDATA[TSH_BACKGROUND]]></OBJECT>
@@ -2692,12 +2692,12 @@
 		<VALUE><![CDATA[#8c8c8c]]></VALUE>
 	</row>
 	<row>
-		<OBJECT><![CDATA[SH_BACKGROUND]]></OBJECT>
-		<VALUE><![CDATA[#4c4c4c]]></VALUE>
-	</row>
-	<row>
 		<OBJECT><![CDATA[SCROLLHILITECOLOR]]></OBJECT>
 		<VALUE><![CDATA[#FFFFFF]]></VALUE>
+	</row>
+	<row>
+		<OBJECT><![CDATA[SH_BACKGROUND]]></OBJECT>
+		<VALUE><![CDATA[#4c4c4c]]></VALUE>
 	</row>
 	<row>
 		<OBJECT><![CDATA[MANAGERCOLUMNHEADERSTARTCOLOR]]></OBJECT>
